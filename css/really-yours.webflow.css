@@ -1574,8 +1574,8 @@ figure {
   margin-left: 2px;
   font-size: 30px;
   font-weight: 900;
-  color: #e2c4a2;
-  font-family: Eudoxussans, sans-serif;
+  color: #FDAE51;
+  font-family: Arial Rounded MT Bold;
 }
 
 @keyframes circle-animation {
@@ -1597,11 +1597,13 @@ figure {
 
 .logo-image {
   width: 100%;
-  max-width: 96px;
+  max-width: 72px;
   object-fit: contain;
   flex-direction: column;
   align-items: flex-start;
   display: flex;
+  border-radius: 21px;
+  margin-right: 9px;
 }
 
 .logo-circle-1 {
@@ -1633,15 +1635,15 @@ figure {
 }
 
 .navlink {
-  color: #e2c4a2;
+  color: #FDAE51;
   padding: 32px 16px;
-  font-weight: 500;
+  font-weight: bolder;
   line-height: 150%;
   transition: color .2s;
 }
 
 .navlink:hover {
-  color: #b88b4c;
+  color: #FDAE51;
 }
 
 .navlink.w--current {
@@ -1687,7 +1689,6 @@ figure {
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   justify-content: space-between;
-  align-items: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 128px;
@@ -2394,9 +2395,9 @@ figure {
 
 .pricing-button {
   width: 100%;
-  color: #fff;
+  color: #FDAE51;
   text-align: center;
-  background-color: #e2c4a2;
+  background-color:rgba(246, 229, 177, .5);
   border-radius: 100px;
   flex: none;
   padding: 16px 30px;
@@ -2408,12 +2409,12 @@ figure {
 
 .pricing-button:hover {
   color: #fff;
-  background-color: #f6e5b1;
+  background-color: #FDAE51;
 }
 
 .pricing-button.white {
   color: #f6e5b1;
-  background-color: #fff;
+  background-color:#f6e5b1;
 }
 
 .pricing-button.white:hover {
@@ -5860,14 +5861,10 @@ figure {
   width: 55%;
   height: 100%;
   background-color: #eef0f3;
-  justify-content: center;
-  align-items: center;
   display: flex;
-  position: absolute;
-  top: 0%;
-  bottom: auto;
-  left: auto;
-  right: -6%;
+  align-items: flex-start; /* This will align content to the top */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15) !important;
+
 }
 
 .hero-image-1 {
@@ -6530,7 +6527,6 @@ figure {
 
   .hero-wrapper-home {
     flex-direction: column;
-    align-items: center;
     padding-top: 80px;
     padding-bottom: 60px;
   }
